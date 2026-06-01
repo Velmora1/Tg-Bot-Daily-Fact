@@ -1,0 +1,25 @@
+{
+  "name": "telegrambotlearning",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Velmora1",
+  "main": "bot.ts",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/bot.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "grammy": "^1.43.0",
+    "mongoose": "^9.6.2"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^25.9.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
