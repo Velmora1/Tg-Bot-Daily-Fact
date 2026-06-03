@@ -7,10 +7,10 @@ export const startHandler = async (ctx: Context) => {
     try {
         await saveUser ({
         telegramId: ctx.from!.id,
-        username:   ctx.from?.username ?? "",
+        username:   ctx.from?.username ?? "Unknown",
         createdAt:   new Date()
         } as any)
-
+    
     await ctx.reply("Welcome! Choose what you want", {
         reply_markup: mainKeyboard
     })

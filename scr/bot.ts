@@ -2,7 +2,7 @@ import "dotenv/config"
 import { Bot } from "grammy"
 import { startCommand } from "./commands/start.commands"
 import { connectDB } from "./config/database"
-import { mainKeyboardCallback } from "./FileHandler/callbacks/main"
+import { mainKeyboardCallback } from "./Handler/callbacks/main"
 import { factCommand} from "../scr/commands/fact.commands"
 
 

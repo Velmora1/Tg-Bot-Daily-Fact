@@ -3,15 +3,15 @@ import { NinjaFact } from "../types/ninja.types"
 
 
 
-// Ось твоя функція з правильною структурою дужок
+
 export async function getRandomFact(): Promise<string | null> {
     try {
         const response = await fetch("https://api.api-ninjas.com/v1/facts", {
             method: 'GET',
             headers: {
                 'X-Api-Key': NINJA_TOKEN
-            }
-        });
+          }
+        })
 
    
         if (!response.ok) {
@@ -29,7 +29,7 @@ export async function getRandomFact(): Promise<string | null> {
         return null;
 
     } catch (error) {
-        // 4. Блок catch відловлює помилки, які сталися в try
+  
         console.error("An error occurred during the fetch request", error);
         return null;
     }

@@ -7,9 +7,10 @@ export interface IUser {
 }
 
 const userSchema = new mongoose.Schema({
-    telegramId: { type: Number, required: true, unique: true },
-    username:   { type: String, required: true },
-    createdAt:   { type: Date, default: Date.now },
+    telegramId:   { type: Number, required: true, unique: true },
+    username:     { type: String, },
+    subscription: { type: Boolean, default: false },
+    createdAt:    { type: Date, default: Date.now },
 })
 
 export const UserModel = mongoose.model<IUser>("user", userSchema)

@@ -1,9 +1,10 @@
 import { Bot } from "grammy"
 import { Context } from "grammy"
 import { getRandomFact } from "../services/fact.services"
+import { authMiddleware } from "../middlewares/auth.middleware"
 
 export const factCommand = (bot: Bot) => {
-bot.command("fact", async (ctx: Context) => {
+bot.command("fact", authMiddleware, async (ctx: Context) => {
  try {
    const factText = await getRandomFact()
   if (factText){
