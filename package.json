@@ -14,12 +14,14 @@
     "cron": "^4.4.0",
     "dotenv": "^17.4.2",
     "grammy": "^1.43.0",
-    "mongoose": "^9.6.2"
+    "mongoose": "^9.6.2",
+    "node-cron": "^4.2.1"
   },
   "devDependencies": {
     "@types/cron": "^2.0.1",
     "@types/mongoose": "^5.11.96",
     "@types/node": "^25.9.1",
+    "@types/node-cron": "^3.0.11",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"

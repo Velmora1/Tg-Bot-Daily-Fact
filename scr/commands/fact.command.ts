@@ -1,6 +1,6 @@
 import { Bot } from "grammy"
 import { Context } from "grammy"
-import { getRandomFact } from "../services/fact.services"
+import { getRandomFact } from "../services/fact.service"
 import { authMiddleware } from "../middlewares/auth.middleware"
 
 export const factCommand = (bot: Bot) => {

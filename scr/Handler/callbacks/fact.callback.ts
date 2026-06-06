@@ -1,13 +1,12 @@
 import { Bot } from "grammy"
 import { Context } from "grammy"
-import { getRandomFact } from "../../services/fact.services"
+import { getRandomFact } from "../../services/fact.service"
 
 export const callbackFact = async (ctx: Context) => {
     await ctx.answerCallbackQuery()
    
  try {
    const factText = await getRandomFact()
-  console.log(factText)
   if (factText){
   await ctx.reply(`*an interesting fact:*\n${factText}`, {
         parse_mode: "Markdown"
