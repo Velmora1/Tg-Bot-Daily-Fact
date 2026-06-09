@@ -9,7 +9,7 @@ export function initCronJobs(bot: Bot) {
         console.log("Cron work start");
 
         try {
-            const subscribedUsers = await UserModel.find({ subscription: true }).select("telegramId");
+            const subscribedUsers = await UserModel.find({ sub: true }).select("telegramId");
 
             if (subscribedUsers.length === 0) {
                 console.log("NO users with active subscriptions.");

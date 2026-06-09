@@ -1,6 +1,5 @@
 import { Bot } from "grammy"
 import { Context } from "grammy"
-import { subHandler } from "../sub.handler"
 import { UserModel } from "../../Modules/userModules"
 
 export const callbackSub = async (ctx: Context) => {
